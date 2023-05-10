@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main id="app">
+      <button v-on:click="$event.target.disabled = true">Klick</button>
+      <button @click.once="click">Klick Once</button>
+      <input type="text" @keyup.enter="click" />
+    </main>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="v-on.js"></script>
+  </body>
+</html>
