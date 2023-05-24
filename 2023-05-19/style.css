@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+article:has(p) {
+  border: 2px solid black;
+}
+
+:where(article, section) > h2 {
+  color: red;
+}
+
+h2 {
+  color: blue;
+}
